@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="841.0" styleClass="panecolor1" stylesheets="@/style/Game1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game1Controller">
+    <children>
+        <AnchorPane fx:id="anchorPaneGame" layoutX="320.8" prefHeight="573.0" prefWidth="501.0" style="-fx-background-radius: 10; -fx-background-color: ffffff;" styleClass="first-color" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="321.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+            <children>
+                <AnchorPane layoutX="10.0" layoutY="113.0" prefHeight="439.0" prefWidth="485.0" AnchorPane.bottomAnchor="23.615388624202637" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.676923683663063" AnchorPane.topAnchor="113.0">
+                    <children>
+                        <Button fx:id="answer1" alignment="CENTER" layoutX="142.0" layoutY="62.0" mnemonicParsing="false" onAction="#handleClickAnswer" prefHeight="54.0" prefWidth="200.0" styleClass="dapAnThuong" AnchorPane.leftAnchor="142.0" AnchorPane.topAnchor="62.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                        <Button fx:id="answer2" alignment="CENTER" layoutX="142.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleClickAnswer" prefHeight="54.0" prefWidth="200.0" styleClass="dapAnThuong" AnchorPane.leftAnchor="142.0" AnchorPane.topAnchor="138.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                        <Button fx:id="answer4" alignment="CENTER" layoutX="142.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleClickAnswer" prefHeight="54.0" prefWidth="200.0" styleClass="dapAnThuong" AnchorPane.leftAnchor="142.0" AnchorPane.topAnchor="290.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                        <Button fx:id="answer3" alignment="CENTER" layoutX="143.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleClickAnswer" prefHeight="54.0" prefWidth="200.0" styleClass="dapAnThuong" AnchorPane.leftAnchor="142.0" AnchorPane.topAnchor="215.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="nextQuestionButton" layoutX="342.0" layoutY="374.0" mnemonicParsing="false" onAction="#handleClickNext" prefHeight="39.0" prefWidth="107.0" styleClass="nextBtn" stylesheets="@/style/Game1.css" text="Tiếp" />
+                  <Label fx:id="correctAnswer" layoutX="217.0" layoutY="14.0" prefHeight="46.0" prefWidth="198.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="correctAnsTittle" layoutX="95.0" layoutY="13.0" prefHeight="47.0" prefWidth="114.0" text="Đáp án đúng: ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="exitButton" layoutX="34.0" layoutY="374.0" mnemonicParsing="false" onAction="#handleClickExit" prefHeight="38.0" prefWidth="107.0" styleClass="exitBtn" stylesheets="@/style/Game1.css" text="Thoát">
+                     <font>
+                        <Font name="System Bold" size="11.815384864807129" />
+                     </font></Button>
+                    </children>
+                </AnchorPane>
+            <TextArea fx:id="questionArea" layoutX="39.0" layoutY="54.0" prefHeight="76.0" prefWidth="426.0" promptText="Question" scrollTop="1.0" styleClass="questionArea">
+               <font>
+                  <Font name="SVN-GilroyXBoldItalic" size="20.0" />
+               </font>
+            </TextArea>
+            </children>
+        </AnchorPane>
+      <AnchorPane prefHeight="600.0" prefWidth="319.0" styleClass="panecolor1">
+         <children>
+            <AnchorPane layoutY="4.0" prefHeight="600.0" prefWidth="38.0" styleClass="panecolor1">
+               <children>
+                  <VBox alignment="CENTER" layoutY="64.0" prefHeight="54.0" prefWidth="62.0" styleClass="buttoncKoChon">
+                     <children>
+                        <Button fx:id="searchButton" alignment="BOTTOM_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleClickSearch" prefHeight="38.0" prefWidth="38.0" styleClass="buttonThuong" stylesheets="@/style/Game1.css">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/image/timKiemWhite.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="titleSearch" alignment="CENTER" prefHeight="22.0" prefWidth="64.0" text="Tìm kiếm" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutY="130.0" prefHeight="54.0" prefWidth="62.0" styleClass="buttonChon" stylesheets="@/style/Game1.css">
+                     <children>
+                        <Button alignment="CENTER" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="38.0" styleClass="button1" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/image/GameDen-01.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="titleSearch1" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="55.0" text="Game" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutY="190.0" prefHeight="70.0" prefWidth="62.0" styleClass="buttoncKoChon">
+                     <children>
+                        <Button fx:id="translateBtn" alignment="CENTER" graphicTextGap="0.0" mnemonicParsing="false" onAction="#handleClickTranslate" prefHeight="38.0" prefWidth="38.0" styleClass="buttonThuong">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/image/Google-translate.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="titleSearch11" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="12.0" prefWidth="55.0" text="Translate" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="65.0" prefHeight="575.0" prefWidth="239.0" AnchorPane.bottomAnchor="28.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="6.0" layoutY="14.0" prefHeight="164.0" prefWidth="227.0" styleClass="chonGame" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <Button fx:id="multiChoiceGame" alignment="BOTTOM_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleClickMultiGame" prefHeight="131.0" prefWidth="153.0" styleClass="button1" stylesheets="@../style/Game1.css">
+                           <graphic>
+                              <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/image/4x/gamchondapan.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="titleSearch2" alignment="CENTER" prefHeight="26.0" prefWidth="187.0" styleClass="titleChon" text="Chọn đáp án đúng">
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="6.0" layoutY="203.0" prefHeight="144.0" prefWidth="227.0" styleClass="gamekochon" AnchorPane.bottomAnchor="191.6461653092067">
+                     <children>
+                        <Button fx:id="matchingGame" alignment="BOTTOM_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleClickMatchingGame" prefHeight="38.0" prefWidth="38.0" styleClass="button2">
+                           <graphic>
+                              <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/image/4x/gamenoitu.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="titleSearch21" alignment="CENTER" prefHeight="27.0" prefWidth="175.0" styleClass="titlekChon" text="Nối từ" textFill="WHITE">
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="6.0" layoutY="394.0" prefHeight="164.0" prefWidth="227.0" styleClass="gamekochon">
+                     <children>
+                        <Button fx:id="listenGame" alignment="BOTTOM_CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="131.0" prefWidth="153.0" styleClass="button2">
+                           <graphic>
+                              <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/image/4x/gamenghedien.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="titleSearch22" alignment="CENTER" prefHeight="26.0" prefWidth="187.0" styleClass="titlekChon" text="Nghe và nhập từ" textFill="WHITE">
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

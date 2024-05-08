@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="206.0" prefWidth="359.0" stylesheets="@../style/dialog.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameController">
+   <children>
+      <HBox layoutX="-1.0" prefHeight="63.0" prefWidth="360.0" styleClass="button2">
+         <children>
+            <Label alignment="CENTER" layoutX="300.0" layoutY="300.0" prefHeight="69.0" prefWidth="431.0" text="Kết Quả" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="84.0" layoutY="88.0" text="Số điểm của bạn:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="254.0" layoutY="88.0" text="/5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+<<<<<<< Updated upstream
+      <Button fx:id="OKBtn" layoutX="166.0" layoutY="155.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="97.0" styleClass="OKBtn" stylesheets="@../style/dialog.css" text="OK" textFill="WHITE">
+=======
+      <Button fx:id="OKBtn" layoutX="131.0" layoutY="142.0" mnemonicParsing="false" onMouseClicked="#handleClickOK" prefHeight="38.0" prefWidth="97.0" styleClass="OKBtn" stylesheets="@../style/dialog.css" text="OK" textFill="WHITE">
+>>>>>>> Stashed changes
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="point" layoutX="243.0" layoutY="88.0" text="0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
